@@ -1,3 +1,7 @@
 # Homework
 
-# P.s. not yet
+# !!!WARNING!!!
+
+# INSTALL PYGAME TO PLAY
+
+# to install write in terminal "pip install pygame"
