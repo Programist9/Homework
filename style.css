@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #eff8f6;
 }
 
 a {
@@ -60,7 +59,7 @@ main p {
 }
 
 .about {
-  font-size: 25px;
+  font-size: 50px;
   color: #d52047;
   text-align: left;
   margin-left: 80px;
@@ -89,15 +88,46 @@ main p {
   max-width: 80%;
 }
 
+.incontainer {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fdf8cd;
+  padding-top: 10px;
+  padding-bottom: auto;
+  margin-top: 40px;
+}
+
+#links {
+  text-align: center;
+  position: relative;
+  right: ;
+}
+
+footer img {
+  width: 1%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .container {
   display: flex;
   align-items: center;
-  background-color: #eff8f6;
-  margin-left: 100px;
-}
-.incontainer {
-  background-color: #e5e5e5;
-  padding: 20px;
+  background-color: #ffffff;
 }
 
 #cards {
@@ -124,23 +154,5 @@ main p {
   font-size: 16px;
   line-height: normal;
   text-decoration-line: underline;
-  display: block;
-  position: relative;
-  right: 40px;
-}
-
-footer {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fdf8cd;
-  padding-top: 10px;
-  padding-bottom: auto;
-}
-
-#links {
-  text-align: center;
-}
-
-footer img {
-  width: 3%;
+  margin-left: 0;
 }
