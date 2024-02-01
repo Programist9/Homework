@@ -84,10 +84,6 @@ main p {
   padding-bottom: 10px;
 }
 
-.container img {
-  max-width: 80%;
-}
-
 .incontainer {
   background-color: #ffffff;
   padding: 20px;
@@ -129,22 +125,16 @@ footer img {
   background-color: #ffffff;
 }
 
-#cards {
-  text-align: center;
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
+.container img {
+  max-width: 80%;
 }
-
-.card {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+/* .card {
   padding: 8px;
   border-radius: 10px;
   margin: 25px;
   border: 2px solid #e5e5e5;
   max-width: 250px;
-}
+} */
 
 .card img {
   width: 70%;
@@ -161,4 +151,28 @@ footer img {
 .card p {
   margin-top: 10px;
   text-align: left;
+}
+
+.card h1 {
+  margin-top: 10px;
+  text-align: left;
+}
+
+#cards {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  text-align: left;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 25px;
+  border: 2px solid #e5e5e5;
+  max-width: 250px;
 }
