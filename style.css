@@ -105,7 +105,6 @@ footer {
 #links {
   text-align: center;
   position: relative;
-  right: ;
 }
 
 footer img {
@@ -133,16 +132,18 @@ footer img {
 #cards {
   text-align: center;
   display: flex;
-  margin-left: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .card {
   text-align: center;
+  justify-content: center;
+  align-items: center;
   padding: 8px;
   border-radius: 10px;
   margin: 25px;
   border: 2px solid #e5e5e5;
+  max-width: 250px;
 }
 
 .card img {
@@ -155,4 +156,9 @@ footer img {
   line-height: normal;
   text-decoration-line: underline;
   margin-left: 0;
+}
+
+.card p {
+  margin-top: 10px;
+  text-align: left;
 }
