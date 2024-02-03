@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgba(239, 248, 246, 1);
 }
 
 a {
@@ -62,9 +63,12 @@ main p {
   font-size: 50px;
   color: #d52047;
   text-align: left;
-  margin-left: 80px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 50px;
+  padding-left: 30px;
+  margin-top: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(239, 248, 246, 1);
 }
 
 .incontainer h1 {
@@ -95,7 +99,7 @@ footer {
   background-color: #fdf8cd;
   padding-top: 10px;
   padding-bottom: auto;
-  margin-top: 40px;
+  padding-bottom: 40px;
 }
 
 #links {
@@ -105,35 +109,6 @@ footer {
 footer img {
   width: 30px;
 }
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-}
-
-.container img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-}
-
-.container img {
-  max-width: 80%;
-}
-/* .card {
-  padding: 8px;
-  border-radius: 10px;
-  margin: 25px;
-  border: 2px solid #e5e5e5;
-  max-width: 250px;
-} */
 
 .card img {
   width: 100%;
@@ -165,6 +140,31 @@ footer img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #fff;
+}
+
+.Fear {
+  background-color: #fff;
+  padding-top: 30px;
+  font-size: 50px;
+  color: #d52047;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: bottom 20px;
+  padding-left: 30px;
+  padding-top: 70px;
+}
+
+#greyText {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(229, 229, 229, 1);
+  text-align: left;
+  padding: 10px;
+  max-width: 20%;
+  max-height: 50%;
+  /* min-height: 70%; */
+  padding-left: 20px;
 }
 
 .card {
@@ -174,4 +174,18 @@ footer img {
   margin: 25px;
   border: 2px solid #e5e5e5;
   max-width: 250px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: rgba(239, 248, 246, 1);
+  border-radius: 5px;
+}
+
+.container img {
+  max-height: 40%;
+  max-width: 67%;
 }
