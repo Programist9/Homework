@@ -84,9 +84,11 @@ reload = 0
 player_y = 390
 score = 0
 bullets_left = 5
+pause_reload = 1
 # текст
 font = pygame.font.Font(None, 36)
 font2 = pygame.font.Font(None, 80)
+font3 = pygame.font.Font(None, 150)
 # Персонажи создаются
 bullet_img = pygame.image.load('bullet.png')
 player__img = pygame.image.load('rocket.png')
@@ -107,6 +109,7 @@ while game:
             Enemy.update()
             if Player.rect.colliderect(Enemy.rect) or lost >= 10:
                 finish = True
+                pause_reload = 0
                 text3 = 'GAME OVER'
                 text7 = 'R для перезапуска'
                 text_surface3 = font2.render(text3, True, (255, 0, 0))
@@ -124,14 +127,14 @@ while game:
         for Bullet in bullets:
             Bullet.move()
             Bullet.update()
-        if score >= 30:
+        if score >= 5:
             finish = True
+            pause_reload = 0
             text4 = 'YOU WIN'
             text_surface4 = font2.render(text4, True, (0, 255, 0))
             text_rect4 = text_surface4.get_rect(center=(win_w // 2, win_h // 2))
             window.blit(text_surface4, text_rect4)
             win_sound.play()
-
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             game = False
@@ -147,6 +150,7 @@ while game:
             score = 0
             bullets_left = 5
             bullets.clear()
+            pause_reload = 1
         if bullets_left > 0:
             if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE and not finish and reload >= 20:
                 player.shoot()
@@ -157,6 +161,18 @@ while game:
         if event.type == pygame.KEYDOWN and event.key == pygame.K_e and not finish and bullets_left == 0:
             reload_sound.play()
             bullets_left = 5
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+            if finish == False and pause_reload == 1:
+                finish = True
+
+                pauseGame = '||'
+                pause_surface = font3.render(pauseGame, True, (255, 255, 255))
+                pause_rect = pause_surface.get_rect(center=(win_w // 2 - 10, win_h // 2))
+
+                window.blit(pause_surface, pause_rect)
+
+            elif finish == True and pause_reload == 1:
+                finish = False
 
     text = f'Пропущено: {lost}'
     text_surface = font.render(text, True, (255, 255, 255))
