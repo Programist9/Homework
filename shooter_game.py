@@ -20,6 +20,10 @@ fire_sound = pygame.mixer.Sound('fire.ogg')
 fire_sound.set_volume(0.1)
 reload_sound = pygame.mixer.Sound('reload.mp3')
 reload_sound.set_volume(0.4)
+lose_sound = pygame.mixer.Sound('lose.mp3')
+lose_sound.set_volume(0.4)
+win_sound = pygame.mixer.Sound('win.mp3')
+win_sound.set_volume(0.4)
 # Классы
 class game_sprite():
     def __init__(self,x,y,w,h,image):
@@ -108,6 +112,7 @@ while game:
                 text_surface3 = font2.render(text3, True, (255, 0, 0))
                 text_rect3 = text_surface3.get_rect(center=(win_w // 2, win_h // 2))
                 window.blit(text_surface3, text_rect3)
+                lose_sound.play()
                 text_surface7 = font.render(text7, True, (255, 0, 0))
                 text_rect7 = text_surface3.get_rect(center=(win_w // 2, win_h // 2 + 50))
                 window.blit(text_surface7, text_rect7)
@@ -119,12 +124,13 @@ while game:
         for Bullet in bullets:
             Bullet.move()
             Bullet.update()
-        if score >= 10:
+        if score >= 30:
             finish = True
             text4 = 'YOU WIN'
             text_surface4 = font2.render(text4, True, (0, 255, 0))
             text_rect4 = text_surface4.get_rect(center=(win_w // 2, win_h // 2))
             window.blit(text_surface4, text_rect4)
+            win_sound.play()
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
