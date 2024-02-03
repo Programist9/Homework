@@ -4,17 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wisdom</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Courgette&family=Limelight&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@400;700&family=Limelight&display=swap"
       rel="stylesheet"
     />
 
@@ -25,75 +18,82 @@
       <div>
         <p id="wisdom1" class="header">Wisdom</p>
         <p id="wisdom2" class="header">Page</p>
-        <a class="header" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a class="header" href="#features">Features</a>
+        <a class="header" id="home" href="#home">Home</a>
+        <a id="about" href="#about">About</a>
+        <a class="header" id="features" href="#features">Features</a>
       </div>
     </header>
 
     <main>
-      <p id="know"><b>KNOWLEDGE HAS A BEGINNING</b></p>
-      <p id="noend"><b>BUT NO END</b></p>
+      <section class="hero">
+        <div class="cent">
+          <h1 id="know">
+            KNOWLEDGE HAS A BEGINNING <br />
+            BUT NO END
+          </h1>
+        </div>
+      </section>
+      <section id="what">
+        <div class="cent">
+          <h1 class="about">About</h1>
+          <div class="container">
+            <div id="greyText">
+              <h3 id="sub">Content subtitle</h3>
+              <p id="lorem">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Explicabo a sint dolorum ipsam voluptat um. Sed quasi
+                dignissimos molestiae pariatur vitae.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod temet dminim veniam,
+                quis nostrud exercitation ullamco laboris nisi...
+              </p>
+            </div>
+            <img src="IMG/Workspace.jpg" alt="Рабочий стол" />
+          </div>
+        </div>
+      </section>
+      <section class="sect">
+        <div class="cent">
+          <h2 class="Fear">Features</h2>
+          <div id="cards" class="container-cards">
+            <div class="card">
+              <img src="IMG/1.jpg" alt="Башня вечером" />
+              <h3>Card title</h3>
+              <p>
+                Lorem ipsum dolor sitr adipisicing elit. Voluptatem
+                deserunaccusantium consequuntur! Quos officiis eius...
+              </p>
+              <a class="more" href="#read_more">Read more ></a>
+            </div>
+            <div class="card">
+              <img src="IMG/2.jpg" alt="Горы" />
+              <h3>Card title</h3>
+              <p>
+                Lorem ipsum dolor sitr adipisicing elit. Voluptatem
+                deserunaccusantium consequuntur! Quos officiis eius...
+              </p>
+              <a class="more" href="#read_more">Read more ></a>
+            </div>
+            <div class="card">
+              <img src="IMG/3.jpg" alt="Наклонёный дом" />
+              <h3>Card title</h3>
+              <p>
+                Lorem ipsum dolor sitr adipisicing elit. Voluptatem
+                deserunaccusantium consequuntur! Quos officiis eius...
+              </p>
+              <a class="more" href="#read_more">Read more ></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <h1 class="about">About</h1>
-
-    <div class="container">
-      <div id="greyText">
-        <h3>Content subtitle</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo a
-          sint dolorum ipsam voluptat um. Sed quasi dignissimos molestiae
-          pariatur vitae.Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod temet dminim veniam, quis nostrud exercitation
-          ullamco laboris nisi...
-        </p>
-      </div>
-      <div>
-        <img src="IMG/Workspace.jpg" alt="Рабочий стол" />
-      </div>
-    </div>
-
-    <h2 class="Fear">Features</h2>
-
-    <div id="cards" class="container-cards">
-      <div class="card">
-        <img src="IMG/1.jpg" alt="Башня вечером" />
-        <h3>Card title</h3>
-        <p>
-          Lorem ipsum dolor sitr adipisicing elit. Voluptatem deserunaccusantium
-          consequuntur! Quos officiis eius...
-        </p>
-        <a class="more" href="#read_more">Read more</a>
-      </div>
-      <div class="card">
-        <img src="IMG/2.jpg" alt="Горы" />
-        <h3>Card title</h3>
-        <p>
-          Lorem ipsum dolor sitr adipisicing elit. Voluptatem deserunaccusantium
-          consequuntur! Quos officiis eius...
-        </p>
-        <a class="more" href="#read_more">Read more</a>
-      </div>
-      <div class="card">
-        <img src="IMG/3.jpg" alt="Наклонёный дом" />
-        <h3>Card title</h3>
-        <p>
-          Lorem ipsum dolor sitr adipisicing elit. Voluptatem deserunaccusantium
-          consequuntur! Quos officiis eius...
-        </p>
-        <a class="more" href="#read_more">Read more</a>
-      </div>
-    </div>
-
     <footer>
-      <p>© 2021 Wisdom page</p>
+      <p>© 2021 <a href="#wisdom" id="wis">Wisdom page</a></p>
       <div id="links">
         <a href="#bird"
           ><img src="IMG/bird.jpg" alt="Ссылка на... птичку?"
         /></a>
-        <a href="#in"><img src="IMG/in.jpg" alt="Ссылка на ин" /></a>
-        <a href="#instagram"
+        <a id="in" href="#in"><img src="IMG/in.jpg" alt="Ссылка на ин" /></a>
+        <a href="#instagram" id="instagram"
           ><img src="IMG/instagram.jpg" alt="Ссылка на инстаграм"
         /></a>
       </div>
