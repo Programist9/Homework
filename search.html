@@ -1,30 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Пошук</title>
+    <title>Поиск</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="hero-section">
       <div class="container">
-        <h1>Пошук автомобіля</h1>
+        <h1>Поиск авто</h1>
         <form class="sect" action="https://fom.in.ua/echo" method="post">
-          <!-- <label for="body_type">Тип кузова:</label><br />
-          <input type="text" id="body_type" name="body_type" /><br />
-          <input type="submit" value="Знайти" /> -->
           <select name="Тип кузова">
             <!-- multiple -->
             <option value="none" selected disabled>Тип кузова</option>
-            <optgroup label="Тип кузова">
-              <option value="1">first</option>
-              <option value="2">second</option>
-              <option value="3">third</option>
-              <option value="4">fifth</option>
-            </optgroup></select
+            <option value="small">Маленький</option>
+            <option value="medium">Средний</option>
+            <option value="big">Большой</option></select
           ><br />
-          <button type="submit">Send</button>
+          <select name="Марка авто">
+            <option value="none" selected disabled>Марка авто</option>
+            <option value="bmv">Бмв</option>
+            <option value="porsh">Порше</option>
+            <option value="mersedes">Мерседес</option></select
+          ><br />
+          <select name="Країна виробник">
+            <option value="none" selected disabled>Страна производитель</option>
+            <option value="china">Китай</option>
+            <option value="germany">Германия</option>
+            <option value="usa">США</option></select
+          ><br />
+          <select name="Ціна (від і до)">
+            <option value="none" selected disabled>Ціна (від і до)</option>
+            <option value="1000-10.000">1000-10.000</option>
+            <option value="10.000-100.000">10.000-100.000</option>
+            <option value="100.000-and more">100.000-и более</option></select
+          ><br />
+          <select name="Рік випуску (від і до)">
+            <option value="none" selected disabled>
+              Рік випуску (від і до)
+            </option>
+            <option value="small">Маленький</option>
+            <option value="medium">Средний</option>
+            <option value="big">Большой</option></select
+          ><br />
+          <select
+            name="Стан (Бити, У кредиті, Нерозмитнена і т.д. Одночасно може бути вибрано кілька пунктів)"
+          >
+            <option value="none" selected disabled>
+              Стан (Бити, У кредиті, Нерозмитнена і т.д. Одночасно може бути
+              вибрано кілька пунктів)
+            </option>
+            <option value="small">Маленький</option>
+            <option value="medium">Средний</option>
+            <option value="big">Большой</option></select
+          ><br />
+          <select name="Тип палива">
+            <option value="none" selected disabled>Тип палива</option>
+            <option value="small">Маленький</option>
+            <option value="medium">Средний</option>
+            <option value="big">Большой</option></select
+          ><br />
+          <select name="Комфорт (Люк, Шкіряний салон тощо)">
+            <option value="none" selected disabled>
+              Комфорт (Люк, Шкіряний салон тощо)
+            </option>
+            <option value="small">Маленький</option>
+            <option value="medium">Средний</option>
+            <option value="big">Большой</option></select
+          ><br />
+          <button type="submit">Начать поиск...</button>
         </form>
         <p>
           Ще не маєте акаунту? <a href="registration.html">Зареєструватися</a>
