@@ -4,16 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Пошук</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Пошук автомобіля</h1>
-    <form action="https://fom.in.ua/echo" method="get">
-      <label for="body_type">Тип кузова:</label><br />
-      <input type="text" id="body_type" name="body_type" /><br />
-      <!-- Додайте решту полів по аналогії з вказаними -->
-      <input type="submit" value="Знайти" />
-    </form>
-    <p>Ще не маєте акаунту? <a href="registration.html">Зареєструватися</a></p>
-    <p>Вже маєте акаунт? <a href="login.html">Увійти</a></p>
+    <section class="hero-section">
+      <div class="container">
+        <h1>Пошук автомобіля</h1>
+        <form class="sect" action="https://fom.in.ua/echo" method="post">
+          <!-- <label for="body_type">Тип кузова:</label><br />
+          <input type="text" id="body_type" name="body_type" /><br />
+          <input type="submit" value="Знайти" /> -->
+          <select name="Тип кузова">
+            <!-- multiple -->
+            <option value="none" selected disabled>Тип кузова</option>
+            <optgroup label="Тип кузова">
+              <option value="1">first</option>
+              <option value="2">second</option>
+              <option value="3">third</option>
+              <option value="4">fifth</option>
+            </optgroup></select
+          ><br />
+          <button type="submit">Send</button>
+        </form>
+        <p>
+          Ще не маєте акаунту? <a href="registration.html">Зареєструватися</a>
+        </p>
+        <p>Вже маєте акаунт? <a href="login.html">Увійти</a></p>
+      </div>
+    </section>
   </body>
 </html>
