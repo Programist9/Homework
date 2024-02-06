@@ -26,13 +26,6 @@ a {
   margin-left: 21px;
 }
 
-header {
-  background-color: rgb(255, 244, 226);
-  padding-bottom: 24px;
-  padding-top: 24px;
-  margin: 0px;
-}
-
 #wisdom1 {
   margin-left: 165px;
   color: aquamarine;
@@ -111,6 +104,13 @@ footer {
 
 footer img {
   width: 30px;
+}
+
+.sect-head {
+  background-color: rgb(255, 244, 226);
+  padding-bottom: 24px;
+  padding-top: 24px;
+  margin: 0px;
 }
 
 .card img {
