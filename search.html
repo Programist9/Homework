@@ -7,12 +7,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="hero-section">
+    <section class=".hero-section">
       <div class="container">
         <h1>Поиск авто</h1>
         <form class="sect" action="https://fom.in.ua/echo" method="post">
           <select name="Тип кузова">
-            <!-- multiple -->
             <option value="none" selected disabled>Тип кузова</option>
             <option value="small">Маленький</option>
             <option value="medium">Средний</option>
@@ -30,44 +29,34 @@
             <option value="germany">Германия</option>
             <option value="usa">США</option></select
           ><br />
-          <select name="Ціна (від і до)">
-            <option value="none" selected disabled>Ціна (від і до)</option>
-            <option value="1000-10.000">1000-10.000</option>
-            <option value="10.000-100.000">10.000-100.000</option>
-            <option value="100.000-and more">100.000-и более</option></select
+          <select name="Ціна">
+            <option value="none" selected disabled>Ціна</option>
+            <option value="1000-10.000">$1000-$10.000</option>
+            <option value="10.000-100.000">$10.000-$100.000</option>
+            <option value="100.000-and more">$100.000-$и более</option></select
           ><br />
-          <select name="Рік випуску (від і до)">
-            <option value="none" selected disabled>
-              Рік випуску (від і до)
-            </option>
-            <option value="small">Маленький</option>
-            <option value="medium">Средний</option>
-            <option value="big">Большой</option></select
+          <select name="Рік випуску">
+            <option value="none" selected disabled>Рік випуску</option>
+            <option value="1980-2000">1980-2000</option>
+            <option value="2000-2010">2000-2010</option>
+            <option value="2010-newest">2010-самые новые</option></select
           ><br />
-          <select
-            name="Стан (Бити, У кредиті, Нерозмитнена і т.д. Одночасно може бути вибрано кілька пунктів)"
-          >
-            <option value="none" selected disabled>
-              Стан (Бити, У кредиті, Нерозмитнена і т.д. Одночасно може бути
-              вибрано кілька пунктів)
-            </option>
-            <option value="small">Маленький</option>
-            <option value="medium">Средний</option>
-            <option value="big">Большой</option></select
+          <select name="Стан" multiple>
+            <option value="none" selected disabled>Стан</option>
+            <option value="Бити">Бити</option>
+            <option value="У кредиті">У кредиті</option>
+            <option value="Нерозмитнена">Нерозмитнена</option></select
           ><br />
           <select name="Тип палива">
             <option value="none" selected disabled>Тип палива</option>
-            <option value="small">Маленький</option>
-            <option value="medium">Средний</option>
-            <option value="big">Большой</option></select
+            <option value="disel">Дизель</option>
+            <option value="gase">Газ</option>
+            <option value="electro">Электро</option></select
           ><br />
-          <select name="Комфорт (Люк, Шкіряний салон тощо)">
-            <option value="none" selected disabled>
-              Комфорт (Люк, Шкіряний салон тощо)
-            </option>
-            <option value="small">Маленький</option>
-            <option value="medium">Средний</option>
-            <option value="big">Большой</option></select
+          <select name="Комфорт">
+            <option value="none" selected disabled>Комфорт</option>
+            <option value="luks">Люкс</option>
+            <option value="Шкіряний салон">Шкіряний салон</option></select
           ><br />
           <button type="submit">Начать поиск...</button>
         </form>

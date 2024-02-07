@@ -1,5 +1,14 @@
 .container {
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
   max-width: 1110px;
+}
+
+.hero-section {
+  background-color: #d52047;
+  color: #fff;
+  text-align: center;
+  font-family: "Limelight", sans-serif;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
