@@ -22,8 +22,9 @@ body {
 }
 
 .card:hover {
-  /* Брат попросил жобавить :3 */
-  background-color: #e5e5e5;
+  /* Брат попросил добавить :3 */
+  background-color: grey;
+  max-width: 250px;
 }
 a {
   text-decoration: none;
@@ -146,7 +147,7 @@ footer img {
   margin-top: 5px;
 }
 .more {
-  color: #d52047;
+  color: #ff0037;
   font-size: 16px;
   line-height: normal;
   text-decoration-line: underline;
@@ -207,8 +208,8 @@ footer img {
   padding: 15px;
   border-radius: 10px;
   margin: 32px;
-  border: 2px solid #e5e5e5;
-  max-width: 270px;
+  border: 2px solid grey;
+  max-width: 240px;
 }
 
 .container {
