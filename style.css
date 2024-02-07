@@ -4,14 +4,14 @@
     url("./FONTS/lato-regular-webfont.woff") format("woff");
 }
 @font-face {
-  font-family: "limelight";
-  src: url("/FONTS/limelight-regular-webfont.woff2") format("woff2"),
-    url("/FONTS/limelight-regular-webfont.woff") format("woff");
+  font-family: "Limelight";
+  src: url("./FONTS/limelight-regular-webfont.woff2") format("woff2"),
+    url("./FONTS/limelight-regular-webfont.woff") format("woff");
 }
 @font-face {
   font-family: "Courgette";
-  src: url("/FONTS/courgette-regular-webfont.woff2") format("woff2"),
-    url("/FONTS/courgette-regular-webfont.woff") format("woff");
+  src: url("./FONTS/courgette-regular-webfont.woff2") format("woff2"),
+    url("./FONTS/courgette-regular-webfont.woff") format("woff");
 }
 
 body {
