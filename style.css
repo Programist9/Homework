@@ -25,8 +25,8 @@ body {
 
 .container {
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 5%;
+  left: 2%;
   border-radius: 5px;
   margin-bottom: 80px;
   display: flex;
@@ -41,7 +41,7 @@ body {
   font-family: "inter";
   text-align: left;
   padding: 10px;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .main-text {
@@ -52,6 +52,9 @@ body {
   letter-spacing: 0em;
   text-align: left;
   margin-top: 5px;
+  margin-right: -70px;
+  z-index: 1;
+  position: relative;
 }
 
 .author {
@@ -73,11 +76,13 @@ body {
 }
 
 .slider-container {
-  position: relative;
+  position: absolute;
   width: 600px;
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
+  right: 8.5%;
+  top: 50px;
 }
 
 .slider {
@@ -94,20 +99,103 @@ body {
 .prev-button,
 .next-button {
   position: absolute;
-  top: 50%;
+  top: 91%;
   transform: translateY(-50%);
   width: 50px;
   height: 50px;
   background-color: transparent;
   border: none;
   font-size: 24px;
-  color: white;
+  color: black;
+  background-color: #fff;
+  padding: 40px;
+  padding: 20px 40px 45px 20px;
 }
 
 .prev-button {
-  left: 10px;
+  left: 37%;
 }
 
 .next-button {
-  right: 10px;
+  right: 37%;
+}
+.man {
+  content: url("/IMGS/man.jpg");
+  z-index: 0;
+  position: relative;
+}
+@media (max-width: 769px) {
+  .slider-container {
+    width: 190px;
+    height: 280px;
+  }
+  #greyText {
+    padding-left: 20px;
+  }
+  .container {
+    max-width: 60%;
+    top: 50px;
+  }
+  .main-text {
+    font-size: 25px;
+    line-height: 30px;
+    margin-right: -60px;
+    z-index: 1;
+    position: relative;
+  }
+  .author {
+    font-family: "inter";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .health {
+    font-family: "inter";
+    color: rgba(60, 60, 67, 0.85);
+    font-size: 10px;
+    margin-top: 0;
+  }
+
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 87%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: black;
+    background-color: #fff;
+    padding: 40px;
+    padding: 10px 45px 50px 15px;
+  }
+
+  .prev-button {
+    left: 10%;
+  }
+
+  .next-button {
+    right: 10%;
+  }
+
+  .man {
+    content: url("/IMGS/centerWoman.jpg");
+    z-index: 0;
+    position: relative;
+  }
+
+  #f {
+    content: url("/IMGS/leftWoman.jpg");
+  }
+  #s {
+    content: url("/IMGS/centerWoman.jpg");
+  }
+  #t {
+    content: url("/IMGS/centerWoman.jpg");
+  }
 }
