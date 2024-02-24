@@ -31,7 +31,7 @@ body {
   margin-bottom: 80px;
   display: flex;
   align-items: center;
-  max-width: 680px;
+  max-width: 47%;
   display: inline-flex;
   justify-content: left;
   /* margin: 160px 0px 0px 60px; */
@@ -77,17 +77,18 @@ body {
 
 .slider-container {
   position: absolute;
-  width: 600px;
+  max-width: 40%;
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
+  max-height: 100%;
   right: 8.5%;
   top: 50px;
 }
 
 .slider {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  /* transition: transform 0.5s ease-in-out; */
 }
 
 .slider img {
@@ -109,15 +110,15 @@ body {
   color: black;
   background-color: #fff;
   padding: 40px;
-  padding: 20px 40px 45px 20px;
+  padding: 15px 40px 45px 20px;
 }
 
 .prev-button {
-  left: 37%;
+  left: 29.3%;
 }
 
 .next-button {
-  right: 37%;
+  right: 30%;
 }
 .man {
   content: url("/IMGS/man.jpg");
@@ -126,15 +127,17 @@ body {
 }
 @media (max-width: 769px) {
   .slider-container {
-    width: 190px;
-    height: 280px;
+    /* width: 190px; */
+    max-height: 28%;
+    max-width: 25%;
+    top: 5%;
   }
   #greyText {
     padding-left: 20px;
   }
   .container {
     max-width: 60%;
-    top: 50px;
+    top: 5%;
   }
   .main-text {
     font-size: 25px;
@@ -206,6 +209,8 @@ body {
     right: 17px;
     height: 220px;
     width: 340px;
+    max-width: none;
+    left: 4%;
   }
   .man {
     max-width: 340px;
