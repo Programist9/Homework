@@ -76,7 +76,7 @@ body {
 .slider-container {
   position: absolute;
   max-width: 40%;
-  height: 40%;
+  /* height: 40%; */
   margin: 0 auto;
   /* overflow: hidden; */
   max-height: 100%;
@@ -106,7 +106,7 @@ body {
   padding: 20px;
   background-color: #fff;
   top: 92%;
-  left: 60%;
+  right: 28%;
 }
 .larow {
   position: absolute;
@@ -148,21 +148,30 @@ body {
     margin-bottom: 5px;
   }
 
+  .rightimg {
+    display: none;
+  }
+  .leftimg {
+    position: relative;
+    max-width: 100%;
+    margin-left: -2%;
+  }
   .rarow {
     position: absolute;
     max-width: 30%;
     padding: 10px;
     background-color: #fff;
     top: 92%;
-    left: 60%;
+    right: 5%;
   }
   .larow {
     position: absolute;
     max-width: 30%;
     padding: 10px;
+    padding-top: 15px;
     background-color: #fff;
     top: 92%;
-    left: 28%;
+    left: 5%;
     transform: rotate(180deg);
   }
   .health {
@@ -181,6 +190,17 @@ body {
     width: 340px;
     max-width: none;
     left: 4%;
+  }
+  .rightimg {
+    display: inline;
+    position: relative;
+    max-width: 50%;
+    margin-left: 2%;
+  }
+  .leftimg {
+    position: relative;
+    max-width: 50%;
+    margin-left: -2%;
   }
   .man {
     max-width: 340px;
@@ -211,5 +231,22 @@ body {
   }
   .man {
     content: url("IMGS/centerWoman.jpg");
+  }
+  .rarow {
+    position: absolute;
+    max-width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    top: 92%;
+    right: 15%;
+  }
+  .larow {
+    position: absolute;
+    max-width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    top: 92%;
+    left: 15%;
+    transform: rotate(180deg);
   }
 }
