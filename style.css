@@ -25,10 +25,8 @@ body {
 
 .container {
   position: absolute;
-  top: 50px;
+  top: 10%;
   left: 2%;
-  border-radius: 5px;
-  margin-bottom: 80px;
   display: flex;
   align-items: center;
   max-width: 47%;
@@ -78,52 +76,46 @@ body {
 .slider-container {
   position: absolute;
   max-width: 40%;
-  height: 400px;
+  height: 40%;
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   max-height: 100%;
   right: 8.5%;
-  top: 50px;
-}
-
-.slider {
+  top: 10%;
   display: flex;
-  /* transition: transform 0.5s ease-in-out; */
-}
-
-.slider img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 91%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  color: black;
-  background-color: #fff;
-  padding: 40px;
-  padding: 15px 40px 45px 20px;
-}
-
-.prev-button {
-  left: 29.3%;
-}
-
-.next-button {
-  right: 30%;
+  /* align-items: center; */
 }
 .man {
-  content: url("/IMGS/man.jpg");
+  content: url("IMGS/man.jpg");
   z-index: 0;
   position: relative;
+}
+.rightimg {
+  position: relative;
+  max-width: 50%;
+  margin-left: 2%;
+}
+.leftimg {
+  position: relative;
+  max-width: 50%;
+  margin-left: -2%;
+}
+.rarow {
+  position: absolute;
+  max-width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  top: 92%;
+  left: 60%;
+}
+.larow {
+  position: absolute;
+  max-width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  top: 92%;
+  left: 28%;
+  transform: rotate(180deg);
 }
 @media (max-width: 769px) {
   .slider-container {
@@ -155,51 +147,29 @@ body {
     text-align: left;
     margin-bottom: 5px;
   }
+
+  .rarow {
+    position: absolute;
+    max-width: 30%;
+    padding: 10px;
+    background-color: #fff;
+    top: 92%;
+    left: 60%;
+  }
+  .larow {
+    position: absolute;
+    max-width: 30%;
+    padding: 10px;
+    background-color: #fff;
+    top: 92%;
+    left: 28%;
+    transform: rotate(180deg);
+  }
   .health {
     font-family: "inter";
     color: rgba(60, 60, 67, 0.85);
     font-size: 10px;
     margin-top: 0;
-  }
-
-  .prev-button,
-  .next-button {
-    position: absolute;
-    top: 87%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    font-size: 30px;
-    color: black;
-    background-color: #fff;
-    padding: 40px;
-    padding: 10px 45px 50px 15px;
-  }
-
-  .prev-button {
-    left: 10%;
-  }
-
-  .next-button {
-    right: 10%;
-  }
-
-  .man {
-    content: url("/IMGS/centerWoman1.jpg");
-    z-index: 0;
-    position: relative;
-  }
-
-  #f {
-    content: url("/IMGS/leftWoman.jpg");
-  }
-  #s {
-    content: url("/IMGS/centerWoman.jpg");
-  }
-  #t {
-    content: url("/IMGS/centerWoman.jpg");
   }
 }
 @media (max-width: 375px) {
@@ -217,42 +187,6 @@ body {
     position: absolute;
     top: -35px;
     left: 10px;
-  }
-  #f {
-    content: url("/IMGS/firstSlide.png");
-    z-index: 0;
-  }
-  #s {
-    content: url("/IMGS/secondSlide.png");
-    z-index: 0;
-  }
-  #t {
-    content: url("/IMGS/lastSlide.png");
-    z-index: 0;
-  }
-  .prev-button,
-  .next-button {
-    position: absolute;
-    top: 90%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    font-size: 30px;
-    color: black;
-    background-color: #fff;
-    padding: 40px;
-    padding: 10px 45px 50px 15px;
-    z-index: 1;
-  }
-
-  .prev-button {
-    left: 30%;
-  }
-
-  .next-button {
-    right: 30%;
   }
   .main-text {
     font-size: 15px;
