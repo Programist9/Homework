@@ -4,35 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.sass" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav class="navigation">
-        <a href="#HOMEPAGE">HOMEPAGE</a>
-        <a href="#ABOUT">ABOUT</a>
-        <a href="#AUTHOR">AUTHOR</a>
-        <a href="#WORKS">WORKS</a>
-        <a href="#PROCESS">PROCESS</a>
-        <a href="#CONTACTS">CONTACTS</a>
-      </nav>
-
-      <section class="section-hero">
-        <div class="container-hero">
-          <h1>Design and layout</h1>
-          <p>
+      <section class="section-navigation">
+        <div class="section-navigation__container-hero">
+          <nav class="section-navigation__container-hero__navigation">
+            <a
+              class="section-navigation__container-hero__navigation__nav-home"
+              href="#HOMEPAGE"
+              >HOMEPAGE</a
+            >
+            <a
+              class="section-navigation__container-hero__navigation__nav-link"
+              href="#ABOUT"
+              >ABOUT</a
+            >
+            <a
+              class="section-navigation__container-hero__navigation__nav-link"
+              href="#AUTHOR"
+              >AUTHOR</a
+            >
+            <a
+              class="section-navigation__container-hero__navigation__nav-link"
+              href="#WORKS"
+              >WORKS</a
+            >
+            <a
+              class="section-navigation__container-hero__navigation__nav-link"
+              href="#PROCESS"
+              >PROCESS</a
+            >
+            <a
+              class="section-navigation__container-hero__navigation__nav-link"
+              href="#CONTACTS"
+              >CONTACTS</a
+            >
+          </nav>
+          <h1 class="section-navigation__container-hero__h1">
+            Design and layout
+          </h1>
+          <p class="section-navigation__container-hero__p">
             Lorem Ipsum is fish text often used in print and web design. Lorem
             Ipsum has been the standard "fish" for Latin texts since the early
             16th century.
           </p>
-          <a href="#WRITEME">WRITE ME</a>
+
+          <a class="section-navigation__container-hero__writeme" href="#WRITEME"
+            >WRITE ME</a
+          >
         </div>
       </section>
     </header>
 
     <main>
       <section class="section-about">
-        <div class="container-about">
+        <div class="section-about__container-about">
           <h2>About me</h2>
           <p>
             About meLorem Ipsum is fish text often used in print and web design.
@@ -43,25 +71,62 @@
       </section>
 
       <section class="section-projects">
-        <div class="container-projects">
-          <h3>40+ Projects</h3>
-          <h3>40+ Projects</h3>
-          <h3>40+ Projects</h3>
-          <h3>40+ Projects</h3>
-          <h3>40+ Projects</h3>
-          <h3>40+ Projects</h3>
+        <div class="section-projects__container-projects">
+          <div class="section-projects__container-projects__project-out">
+            <h3
+              class="section-projects__container-projects__project-out__project"
+            >
+              <b>40+</b><br />Projects
+            </h3>
+          </div>
+          <div class="section-projects__container-projects__project-out">
+            <h3
+              class="section-projects__container-projects__project-out__project"
+            >
+              <b>40+</b><br />Projects
+            </h3>
+          </div>
+          <div class="section-projects__container-projects__project-out">
+            <h3
+              class="section-projects__container-projects__project-out__project"
+            >
+              <b>40+</b><br />Projects
+            </h3>
+          </div>
+          <div class="section-projects__container-projects__project-out">
+            <h3
+              class="section-projects__container-projects__project-out__project"
+            >
+              <b>40+</b><br />Projects
+            </h3>
+          </div>
+          <div class="section-projects__container-projects__project-out">
+            <h3
+              class="section-projects__container-projects__project-out__project"
+            >
+              <b>40+</b><br />Projects
+            </h3>
+          </div>
+          <div class="section-projects__container-projects__project-out">
+            <h3
+              class="section-projects__container-projects__project-out__project"
+            >
+              <b>40+</b><br />Projects
+            </h3>
+          </div>
         </div>
       </section>
 
       <section class="section-how">
-        <div class="container-how">
+        <div class="section-how__container-how">
           <h2>How do I work</h2>
-          <p>
+          <p class="section-how__container-how__p">
             Lorem Ipsum is fish text often used in print and web design. Lorem
             Ipsum has been the standard "fish" for Latin texts since the early
             16th century.
           </p>
           <iframe
+            class="section-how__container-how__iframe"
             width="1280"
             height="720"
             src="https://www.youtube.com/embed/jumwVe7k3kI?list=RDjumwVe7k3kI"
@@ -78,7 +143,7 @@
       <section class="section-footer">
         <div class="container-footer">
           <h3>John Smith</h3>
-          <p>(c) 2018. All rights reserved.</p>
+          <p class="section-footer__p">(c) 2018. All rights reserved.</p>
         </div>
       </section>
     </footer>
