@@ -28,6 +28,7 @@ p {
     &__h1 {
       font-size: 48px;
       margin-top: 150px;
+      font-weight: 500;
     }
     &__p {
       max-width: 80%;
@@ -61,12 +62,20 @@ p {
 /* main */
 .section-about {
   background-color: #fff;
-  padding: 110px;
+  padding: 110px 0 110px 0;
   &__container-about {
     text-align: center;
-    max-width: 40%;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    max-width: 540px;
+    &__h2 {
+      font-weight: 500;
+      font-size: 32px;
+    }
+    &__p {
+      max-width: 540px;
+      //   text-align: center;
+    }
   }
 }
 
@@ -76,12 +85,15 @@ p {
   &__container-projects {
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
+    // margin-left: auto;
+    // margin-right: auto;
+    // max-width: 70%;
+    display: flex;
+    justify-content: center;
     &__project-out::before {
       position: relative;
       content: url("project.png");
+      height: 50px;
     }
     &__project-out {
       margin-right: 2.5%;
@@ -90,6 +102,8 @@ p {
       &__project {
         color: white;
         display: inline-block;
+        line-height: 20px;
+        font-weight: 100;
       }
     }
   }
@@ -111,7 +125,7 @@ p {
     }
     &__p {
       margin-top: 50px;
-      max-width: 60%;
+      max-width: 540px;
       text-align: center;
       margin-left: auto;
       margin-right: auto;
