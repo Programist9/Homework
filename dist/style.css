@@ -2,6 +2,10 @@
   font-family: "roboto";
   src: url("Fonts/roboto-regular-webfont.woff2") format("woff2"), url("Fonts/roboto-regular-webfont.woff") format("woff");
 }
+@font-face {
+  font-family: "robotomedium";
+  src: url("roboto-medium-webfont.woff2") format("woff2"), url("roboto-medium-webfont.woff") format("woff");
+}
 body {
   margin: 0;
   padding: 0;
@@ -17,6 +21,10 @@ p {
   color: #727272;
 }
 
+* {
+  margin: 0;
+}
+
 /* header */
 .section-navigation {
   background-color: #eeeff1;
@@ -24,7 +32,7 @@ p {
 .section-navigation__container-hero {
   margin-left: auto;
   margin-right: auto;
-  max-width: 70%;
+  max-width: 1110px;
   text-align: left;
   padding-bottom: 140px;
 }
@@ -34,7 +42,7 @@ p {
   font-weight: 500;
 }
 .section-navigation__container-hero__p {
-  max-width: 80%;
+  max-width: 540px;
   margin-bottom: 65px;
 }
 .section-navigation__container-hero__writeme {
@@ -89,21 +97,16 @@ p {
   display: flex;
   justify-content: center;
 }
-.section-projects__container-projects__project-out::before {
-  position: relative;
-  content: url("project.png");
-  height: 50px;
-}
 .section-projects__container-projects__project-out {
   margin-right: 2.5%;
   text-align: left;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 .section-projects__container-projects__project-out__project {
   color: white;
-  display: inline-block;
   line-height: 20px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 /* ------ */
@@ -113,7 +116,7 @@ p {
 .section-how__container-how {
   margin-top: 100px;
   margin-bottom: 100px;
-  max-width: 70%;
+  max-width: 1110px;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -136,7 +139,7 @@ p {
   color: white;
 }
 .section-footer__container-footer {
-  max-width: 70%;
+  max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;
