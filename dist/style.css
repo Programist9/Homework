@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "robotomedium";
-  src: url("roboto-medium-webfont.woff2") format("woff2"), url("roboto-medium-webfont.woff") format("woff");
+  src: url("Fonts/roboto-medium-webfont.woff2") format("woff2"), url("Fonts/roboto-medium-webfont.woff") format("woff");
 }
 body {
   margin: 0;
@@ -39,7 +39,9 @@ p {
 .section-navigation__container-hero__h1 {
   font-size: 48px;
   margin-top: 150px;
+  font-family: "robotomedium";
   font-weight: 500;
+  margin-bottom: 60px;
 }
 .section-navigation__container-hero__p {
   max-width: 540px;
@@ -57,15 +59,18 @@ p {
 .section-navigation__container-hero__navigation__nav-link {
   font-size: 16px;
   color: black;
-  padding: 0;
   background-color: none;
   margin-left: 40px;
+  line-height: 26px;
+  font-weight: 400;
 }
 .section-navigation__container-hero__navigation__nav-home {
   font-size: 16px;
   color: #34547a;
   padding: 0;
   background-color: none;
+  font-family: "robotomedium";
+  font-weight: 500;
 }
 
 /* main */
@@ -80,8 +85,10 @@ p {
   max-width: 540px;
 }
 .section-about__container-about__h2 {
+  font-family: "robotomedium";
   font-weight: 500;
   font-size: 32px;
+  margin-bottom: 50px;
 }
 .section-about__container-about__p {
   max-width: 540px;
@@ -96,16 +103,27 @@ p {
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
+  gap: 45px;
 }
 .section-projects__container-projects__project-out {
   margin-right: 2.5%;
   text-align: left;
   display: flex;
   align-items: center;
+  gap: 20px;
 }
-.section-projects__container-projects__project-out__project {
+.section-projects__container-projects__project-out__project1 {
   color: white;
-  line-height: 20px;
+  font-family: "robotomedium";
+  line-height: 24px;
+  font-size: 21px;
+  font-weight: 500;
+}
+.section-projects__container-projects__project-out__project2 {
+  color: white;
+  font-family: "roboto";
+  line-height: 26px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -132,6 +150,11 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+.section-how__container-how__h2 {
+  font-size: 32px;
+  font-family: "robotomedium";
+  font-weight: 500;
+}
 
 /* footer  */
 .section-footer {
@@ -147,4 +170,16 @@ p {
 }
 .section-footer__container-footer__p {
   color: white;
+  font-family: "roboto";
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+}
+.section-footer__container-footer__h3 {
+  color: white;
+  font-family: "robotomedium";
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24px;
 }/*# sourceMappingURL=style.css.map */

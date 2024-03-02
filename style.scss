@@ -5,8 +5,8 @@
 }
 @font-face {
   font-family: "robotomedium";
-  src: url("roboto-medium-webfont.woff2") format("woff2"),
-    url("roboto-medium-webfont.woff") format("woff");
+  src: url("Fonts/roboto-medium-webfont.woff2") format("woff2"),
+    url("Fonts/roboto-medium-webfont.woff") format("woff");
 }
 body {
   margin: 0;
@@ -35,7 +35,9 @@ p {
     &__h1 {
       font-size: 48px;
       margin-top: 150px;
+      font-family: "robotomedium";
       font-weight: 500;
+      margin-bottom: 60px;
     }
     &__p {
       max-width: 540px;
@@ -52,15 +54,19 @@ p {
       &__nav-link {
         font-size: 16px;
         color: black;
-        padding: 0;
+        // padding: 0;
         background-color: none;
         margin-left: 40px;
+        line-height: 26px;
+        font-weight: 400;
       }
       &__nav-home {
         font-size: 16px;
         color: #34547a;
         padding: 0;
         background-color: none;
+        font-family: "robotomedium";
+        font-weight: 500;
       }
     }
   }
@@ -76,8 +82,10 @@ p {
     margin-left: auto;
     max-width: 540px;
     &__h2 {
+      font-family: "robotomedium";
       font-weight: 500;
       font-size: 32px;
+      margin-bottom: 50px;
     }
     &__p {
       max-width: 540px;
@@ -97,17 +105,28 @@ p {
     // max-width: 70%;
     display: flex;
     justify-content: center;
-    &__img {
-    }
+    gap: 45px;
+    // &__img {
+
+    // }
     &__project-out {
       margin-right: 2.5%;
       text-align: left;
       display: flex;
       align-items: center;
-      &__project {
+      gap: 20px;
+      &__project1 {
         color: white;
-        // display: inline-block;
-        line-height: 20px;
+        font-family: "robotomedium";
+        line-height: 24px;
+        font-size: 21px;
+        font-weight: 500;
+      }
+      &__project2 {
+        color: white;
+        font-family: "roboto";
+        line-height: 26px;
+        font-size: 16px;
         font-weight: 400;
       }
     }
@@ -135,6 +154,11 @@ p {
       margin-left: auto;
       margin-right: auto;
     }
+    &__h2 {
+      font-size: 32px;
+      font-family: "robotomedium";
+      font-weight: 500;
+    }
   }
 }
 
@@ -150,6 +174,18 @@ p {
     padding-top: 50px;
     &__p {
       color: white;
+      font-family: "roboto";
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 21px;
+    }
+    &__h3 {
+      color: white;
+      font-family: "robotomedium";
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 24px;
     }
   }
 }
