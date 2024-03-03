@@ -1,185 +1,55 @@
-@font-face {
-  font-family: "roboto";
-  src: url("Fonts/roboto-regular-webfont.woff2") format("woff2"), url("Fonts/roboto-regular-webfont.woff") format("woff");
-}
-@font-face {
-  font-family: "robotomedium";
-  src: url("Fonts/roboto-medium-webfont.woff2") format("woff2"), url("Fonts/roboto-medium-webfont.woff") format("woff");
-}
 body {
   margin: 0;
   padding: 0;
-  font-family: "roboto";
 }
 
-a {
-  text-decoration: none;
-}
-
-p {
-  font-size: 16px;
-  color: #727272;
-}
-
-* {
-  margin: 0;
-}
-
-/* header */
-.section-navigation {
-  background-color: #eeeff1;
-}
-.section-navigation__container-hero {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1110px;
-  text-align: left;
-  padding-bottom: 140px;
-}
-.section-navigation__container-hero__h1 {
-  font-size: 48px;
-  margin-top: 150px;
-  font-family: "robotomedium";
-  font-weight: 500;
-  margin-bottom: 60px;
-}
-.section-navigation__container-hero__p {
-  max-width: 540px;
-  margin-bottom: 65px;
-}
-.section-navigation__container-hero__writeme {
-  background-color: #34547a;
-  padding: 20px 40px 20px 40px;
-  font-size: 16px;
-  color: #fff;
-}
-.section-navigation__container-hero__navigation {
-  padding-top: 80px;
-}
-.section-navigation__container-hero__navigation__nav-link {
-  font-size: 16px;
-  color: black;
-  background-color: none;
-  margin-left: 40px;
-  line-height: 26px;
-  font-weight: 400;
-}
-.section-navigation__container-hero__navigation__nav-home {
-  font-size: 16px;
-  color: #34547a;
-  padding: 0;
-  background-color: none;
-  font-family: "robotomedium";
-  font-weight: 500;
-}
-
-/* main */
-.section-about {
-  background-color: #fff;
-  padding: 110px 0 110px 0;
-}
-.section-about__container-about {
+header {
+  background-color: #74acb6;
+  color: white;
+  font-size: 33px;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 540px;
-}
-.section-about__container-about__h2 {
-  font-family: "robotomedium";
-  font-weight: 500;
-  font-size: 32px;
-  margin-bottom: 50px;
-}
-.section-about__container-about__p {
-  max-width: 540px;
 }
 
-/* ----- */
-.section-projects {
-  background-color: #34547a;
+footer {
+  background-color: #74acb6;
+  color: white;
+  font-size: 16px;
+  text-align: center;
 }
-.section-projects__container-projects {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-  justify-content: center;
-  gap: 45px;
-}
-.section-projects__container-projects__project-out {
-  margin-right: 2.5%;
-  text-align: left;
-  display: flex;
+
+.modal-wrapper {
+  display: none;
   align-items: center;
-  gap: 20px;
-}
-.section-projects__container-projects__project-out__project1 {
-  color: white;
-  font-family: "robotomedium";
-  line-height: 24px;
-  font-size: 21px;
-  font-weight: 500;
-}
-.section-projects__container-projects__project-out__project2 {
-  color: white;
-  font-family: "roboto";
-  line-height: 26px;
-  font-size: 16px;
-  font-weight: 400;
+  justify-self: center;
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background-color: rgba(50, 50, 50, 0.5);
+  width: 100%;
 }
 
-/* ------ */
-.section-how {
+.modal-wrapper.active {
+  display: flex;
+}
+
+.modal-window {
+  display: none;
   background-color: #fff;
-}
-.section-how__container-how {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  max-width: 1110px;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-.section-how__container-how__iframe {
-  margin-top: 57px;
-  max-width: 100%;
-}
-.section-how__container-how__p {
-  margin-top: 50px;
-  max-width: 540px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.section-how__container-how__h2 {
-  font-size: 32px;
-  font-family: "robotomedium";
-  font-weight: 500;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 1rem;
 }
 
-/* footer  */
-.section-footer {
-  background-color: #34547a;
-  color: white;
+.modal-window.active {
+  display: block;
 }
-.section-footer__container-footer {
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-.section-footer__container-footer__p {
-  color: white;
-  font-family: "roboto";
-  margin-top: 20px;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 21px;
-}
-.section-footer__container-footer__h3 {
-  color: white;
-  font-family: "robotomedium";
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 24px;
+
+.modal-window .close {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  font-size: 2rem;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
