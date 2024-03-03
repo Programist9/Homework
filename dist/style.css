@@ -3,53 +3,16 @@ body {
   padding: 0;
 }
 
-header {
-  background-color: #74acb6;
-  color: white;
-  font-size: 33px;
-  text-align: center;
-}
-
-footer {
-  background-color: #74acb6;
-  color: white;
-  font-size: 16px;
-  text-align: center;
-}
-
-.modal-wrapper {
+.tab-pane.fade {
   display: none;
-  align-items: center;
-  justify-self: center;
-  position: fixed;
-  inset: 0;
-  z-index: 10;
-  background-color: rgba(50, 50, 50, 0.5);
-  width: 100%;
 }
-
-.modal-wrapper.active {
-  display: flex;
-}
-
-.modal-window {
-  display: none;
-  background-color: #fff;
-  padding: 2rem;
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  border-radius: 1rem;
-}
-
-.modal-window.active {
+.tab-pane.active {
   display: block;
 }
 
-.modal-window .close {
-  position: absolute;
-  right: 1rem;
-  top: 0;
-  font-size: 2rem;
+.nav-link.active {
+  background-color: #517595;
+}
+.nav-link:hover {
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

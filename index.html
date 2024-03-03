@@ -3,107 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JS(jQuary)</title>
     <link rel="stylesheet" href="dist/style.css" />
   </head>
   <body>
-    <header>
-      <section>
-        <div><h1 id="mainTitle">Header</h1></div>
-      </section>
-    </header>
     <main>
-      <section>
-        <button id="handler">Click</button>
-        <div class="wrap" style="display: none">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
-          autem quo! Repellendus modi quaerat dicta non obcaecati repellat
-          voluptate pariatur perspiciatis explicabo nobis aspernatur odit
-          quisquam quae voluptas officiis voluptatibus est deleniti assumenda
-          similique, id excepturi perferendis. Provident animi cumque
-          necessitatibus voluptates dicta quisquam totam rem facilis et
-          molestias iusto qui, quia laudantium ipsam. Eveniet dicta consectetur
-          unde quo ad earum ut debitis fugiat obcaecati ipsum cumque inventore
-          dolor repellat assumenda cum quis ducimus exercitationem iure aliquam
-          numquam, repudiandae ea quod. Consectetur, quo distinctio dignissimos
-          fuga optio eaque laudantium fugit perspiciatis molestias labore
-          tenetur, cupiditate tempore nihil eum nulla a? Eos possimus ratione
-          tempora soluta, ipsam voluptas doloribus, tenetur hic sequi
-          perferendis quaerat nisi enim dicta voluptate cupiditate doloremque
-          odio placeat maiores ea aspernatur dignissimos est! Doloribus debitis
-          ipsum dolorem obcaecati nobis ut dolores ea maiores, possimus delectus
-          voluptate aperiam recusandae consequuntur eligendi beatae autem ullam
-          quod quia voluptatum vero velit vel? Accusamus iusto necessitatibus
-          consectetur! Ipsa minus maiores eaque quisquam veniam assumenda fugiat
-          reprehenderit officiis, earum aspernatur natus praesentium corporis
-          explicabo voluptatum nemo modi error delectus tempore voluptatibus?
-          Architecto, excepturi, dolorum, provident rerum debitis delectus quia
-          deleniti dolores non dicta suscipit earum omnis sit minima adipisci
-          blanditiis. Non sequi adipisci earum nisi dolore iusto facere corrupti
-          ad reiciendis harum aliquam, numquam itaque ducimus exercitationem
-          quod tempore sint officiis dolorum voluptas. Numquam laboriosam
-          reprehenderit, qui exercitationem esse sequi amet, iusto sit error vel
-          harum explicabo reiciendis temporibus fugiat, deserunt dolor tempora
-          nesciunt eveniet repellendus aut accusantium laborum voluptatum
-          praesentium! Aspernatur, nihil aliquam. Sapiente nesciunt corrupti
-          officia deserunt necessitatibus facilis ipsum numquam perspiciatis
-          aperiam corporis quasi nostrum molestiae, nemo distinctio minima, esse
-          error accusantium recusandae doloribus hic accusamus iusto possimus
-          est suscipit? Dolorem, quisquam! Ab molestias voluptatibus enim
-          mollitia unde, quam alias velit quis doloribus nam! Nemo hic ratione
-          laudantium aliquid exercitationem dicta unde similique delectus atque
-          beatae? Eveniet a obcaecati vitae id rerum, mollitia ipsam cupiditate
-          facere aspernatur quae repudiandae? Dolorum aspernatur natus iusto
-          necessitatibus laudantium ut nam, non id voluptatem cumque blanditiis
-          recusandae soluta distinctio nemo excepturi magni ducimus iste illo
-          doloremque. Necessitatibus porro aspernatur ipsam fugit laboriosam rem
-          iure vero, dolores ducimus est eligendi fugiat nam quisquam saepe ut
-          aliquam mollitia expedita at, illo illum delectus adipisci perferendis
-          voluptate. Expedita illum, numquam sunt rem odio veritatis optio eos
-          consequuntur fuga fugit dignissimos aliquam cumque in itaque! Rerum
-          odit ipsum, dignissimos harum deserunt nihil quisquam voluptate
-          reprehenderit eligendi similique, id at libero repudiandae rem nam
-          possimus, corporis nemo magnam hic ex laborum delectus odio quidem!
-          Corrupti ipsum excepturi officia nesciunt dignissimos a labore
-          consequatur voluptates. Dolores cum quam voluptate, aspernatur totam
-          nesciunt dolore temporibus illo nulla maiores dicta officia vel ipsam
-          dolor voluptatum tempora quis nobis et doloremque recusandae beatae?
-          Aspernatur debitis sequi, ratione provident nam veritatis quisquam
-          maiores voluptates eaque obcaecati vero libero dolore pariatur fuga
-          itaque animi maxime asperiores atque magni quod temporibus. Eius
-          dolorem libero iste velit expedita minima nostrum asperiores eos quia
-          maxime voluptate sunt adipisci ipsa tempora, ea modi. Placeat
-          veritatis temporibus pariatur error?
+    <section class="tabs-section">
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home" data-target="#tab-home" type="button" role="tab">Home</button>
+        <button class="nav-link" id="nav-profile" data-target="#tab-profile" type="button" role="tab">Profile</button>
+        <button class="nav-link" id="nav-contact" data-target="#tab-contact" type="button" role="tab">Contact</button>
+        <button class="nav-link" id="nav-delivery" data-target="#tab-delivery" type="button" role="tab">Delivery</button>
+      </div>
+    </section>
+    
+    <section class="py-rem first-section">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane active" id="tab-home" role="tabpanel">
+          I tried my best while doing <b>Home tab content</b> on this site
         </div>
-        <hr />
-        <button class="open-modal" data-target="#first">Open first</button>
-        <button class="open-modal" data-target="#second">Open second</button>
-        <button class="open-modal" data-target="#third">Open third</button>
-      </section>
-    </main>
-    <footer>
-      <section>
-        <div><p>my site</p></div>
-      </section>
-    </footer>
-    <div class="modal-wrapper">
-      <div id="first" class="modal-window">
-        <span class="close">&times;</span>
-        <h2>First content</h2>
-        <form>
-          <input type="text" />
-          <button type="submit">Send</button>
-        </form>
+        <div class="tab-pane fade" id="tab-profile" role="tabpanel">
+          I tried my best while doing <b>Profile tab content</b> on this site
+        </div>
+        <div class="tab-pane fade" id="tab-contact" role="tabpanel">
+          I tried my best while doing <b>Contact tab content</b> on this site
+        </div>
+        <div class="tab-pane fade" id="tab-delivery" role="tabpanel">
+          I tried my best while doing <b>Delivery tab content</b> on this site
+        </div>
       </div>
-      <div id="second" class="modal-window">
-        <span class="close">&times;</span>
-        <h2>Second content</h2>
-      </div>
-      <div id="third" class="modal-window">
-        <span class="close">&times;</span>
-        <h2>Third content</h2>
-      </div>
-    </div>
+    </section>
     <script src="./assets/jQuary/jquery-3.7.1.min.js"></script>
     <script src="my_script.js"></script>
   </body>
