@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS(jQuary)</title>
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body>
+    <section class="tabs-section">
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button
+          class="nav-link active"
+          id="nav-home"
+          data-target="#tab-home"
+          type="button"
+          role="tab"
+        >
+          Home
+        </button>
+        <button
+          class="nav-link"
+          id="nav-profile"
+          data-target="#tab-profile"
+          type="button"
+          role="tab"
+        >
+          Profile
+        </button>
+        <button
+          class="nav-link"
+          id="nav-contact"
+          data-target="#tab-contact"
+          type="button"
+          role="tab"
+        >
+          Contact
+        </button>
+        <button
+          class="nav-link"
+          id="nav-delivery"
+          data-target="#tab-delivery"
+          type="button"
+          role="tab"
+        >
+          Delivery
+        </button>
+      </div>
+    </section>
+
+    <section class="py-rem first-section">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane active" id="tab-home" role="tabpanel">
+          I tried my best while doing <b>Home tab content</b> on this site
+        </div>
+        <div class="tab-pane fade" id="tab-profile" role="tabpanel">
+          I tried my best while doing <b>Profile tab content</b> on this site
+        </div>
+        <div class="tab-pane fade" id="tab-contact" role="tabpanel">
+          I tried my best while doing <b>Contact tab content</b> on this site
+        </div>
+        <div class="tab-pane fade" id="tab-delivery" role="tabpanel">
+          I tried my best while doing <b>Delivery tab content</b> on this site
+        </div>
+      </div>
+    </section>
+    <script src="./assets/jQuary/jquery-3.7.1.min.js"></script>
+    <script src="my_script.js"></script>
+  </body>
+</html>

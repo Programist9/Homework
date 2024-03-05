@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.tab-pane {
+  &.fade {
+  display: none;
+  }
+  &.active {
+    display: block;
+    // 
+  }
+}
+
+
+
+
+.nav-link {
+  &.active {
+    background-color: #517595;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
